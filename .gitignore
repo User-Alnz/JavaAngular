@@ -1,0 +1,42 @@
+# Eclipse-specific
+/.settings/
+/.project
+.classpath
+
+# Compiled class files
+/bin/
+/build/
+
+# Maven
+/target/
+
+# Gradle
+/.gradle/
+/build/
+
+# IntelliJ (if someone switches IDE)
+/.idea/
+/*.iml
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Package distributions
+*.jar
+*.war
+*.ear
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# VS Code (if used)
+/.vscode/
+
+# Local environment config
+.env
