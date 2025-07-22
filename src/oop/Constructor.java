@@ -27,6 +27,18 @@ package oop;
 			this.studentAge = age;
 		}
 		
+		//Overloading can also be use to create extra constructor 
+		public JavaStudent(int id,  int age , String name)
+		{
+			this.studentId = id;
+			this.studentName = name;
+			this.studentAge = age;
+		}
+		
+		//Specific case call default constructor above. This is chaining constructor method.
+		public JavaStudent (int id) {
+			this(); // assign default constructor to instanced class 
+		}
 		
 		
 		void printDetailsOfStudentInstance() 
@@ -43,7 +55,8 @@ public class Constructor {
 		
 		JavaStudent student = new JavaStudent();
 		JavaStudent	student2 = new JavaStudent(1, "Jotaro Kujo", 28);
-		JavaStudent student3 = new JavaStudent(2, "Jonathan Joestar", 20);
+		JavaStudent student3 = new JavaStudent(2, 20, "Jonathan Joestar");
+		
 		
 		student.printDetailsOfStudentInstance();
 		student2.printDetailsOfStudentInstance();
